@@ -11,7 +11,7 @@ const client = new MongoClient(mongoUri);
 let db, usersCollection, videosCollection;
 
 let adminId = [907402803, 6351614390];
-const channelUsername = "@+QYoIOggBAG9jNjBi";
+
 
 let adminStep = {
   stage: null,
@@ -119,7 +119,11 @@ function startBot() {
                 [
                   {
                     text: "🔗 Obuna bo‘lish",
-                    url: `https://t.me/${channelUsername.replace("@", "")}`,
+                    url: `https://t.me/+QYoIOggBAG9jNjBi`,
+                  },
+                 {
+                    text: "🔗 Obuna bo‘lish",
+                    url: `https://t.me/+xwQPaNVgDI45NTIy`,
                   },
                 ],
                 [{ text: "✅ Tekshirish", callback_data: "check_sub" }],
