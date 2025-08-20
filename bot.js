@@ -179,13 +179,14 @@ function startBot() {
           reply_markup: {
             inline_keyboard: [
               [
-                {
-                  text: "🔗 Obuna bo‘lish",
-                  url: `https://t.me/${channelUsername.replace("@", "")}`,
-                },
-              ],
-              [{ text: "✅ Tekshirish", callback_data: "check_sub" }],
-            ],
+  [
+    {
+      text: "🔗 Obuna bo‘lish",
+      url: "https://t.me/+QYoIOggBAG9jNjBi", // yoki ikkinchi kanalingiz linki
+    },
+  ],
+  [{ text: "✅ Tekshirish", callback_data: "check_sub" }],
+]
           },
         }
       );
