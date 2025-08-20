@@ -46,7 +46,7 @@ const connectMongo = async () => {
 connectMongo();
 const isSubscribed = async (userId) => {
   try {
-    const res = await bot.getChatMember(channelUsername, userId);
+    const res = await bot.getChatMember("-1003097952508", userId); // kanal ID’si
     return ["member", "creator", "administrator"].includes(res.status);
   } catch {
     return false;
